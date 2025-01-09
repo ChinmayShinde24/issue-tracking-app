@@ -12,14 +12,17 @@ function App() {
       <BrowserRouter>
         <NavigationBar />
         <Routes>
-          <Route path="" element={<Issues />} />
-          <Route path="issues" element={<Issues />} />
-          <Route path="create-issue" element={<CreateIssue />} />
+          <Route path="issue-tracking-app/" element={<Issues />} />
+          <Route path="issue-tracking-app/issues" element={<Issues />} />
+          <Route
+            path="issue-tracking-app/create-issue"
+            element={<CreateIssue />}
+          />
           <Route path="*" element={<Notfound />} />
         </Routes>
       </BrowserRouter>
     </IssueProvider>
   );
-};
+}
 
 export default App;

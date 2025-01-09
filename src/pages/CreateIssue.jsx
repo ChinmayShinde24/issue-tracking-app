@@ -43,7 +43,7 @@ function CreateIssue() {
         dueDateValue,
         priorityValue,
       );
-      navigate('/');
+      navigate('/issue-tracking-app/');
     } else {
       alert('Invalid');
     }
